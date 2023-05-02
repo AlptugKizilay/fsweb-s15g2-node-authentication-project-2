@@ -6,6 +6,7 @@
   Eğer bunları sağlamazsanız Testler geçmez ve diğer yazılımcılar bu repoyu klonladıklarında
   projeyi beklendiği gibi çalıştıramazlar.
  */
+const JwtSecret = process.env.JWT_SECRET || "shh";
 module.exports = {
-
+  JWT_SECRET : JwtSecret
 }
